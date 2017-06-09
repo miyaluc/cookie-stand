@@ -8,8 +8,17 @@ var loc1stAndPike = {
   avgCookiesPerCust: 6.3,
 }
 
-var randomNum = Math.floor((Math.random() * (loc1stAndPike.maxCustHourly - loc1stAndPike.minCustHourly +1)) + loc1stAndPike.minCustHourly);
-  console.log('1st and Pike: ' + randomNum);
+for (var i = 600; i <= 2000; i+=100) {
+  var randomNum = Math.floor((Math.random() * (loc1stAndPike.maxCustHourly - loc1stAndPike.minCustHourly +1)) + loc1stAndPike.minCustHourly);{
+  randomNum++;
+  }
+  if (i < 1000) {
+    console.log('1st and Pike 0' + i + ': ' + randomNum);
+  } else {
+    console.log('1st and Pike ' + i + ': ' + randomNum);
+  }
+}
+
 
 var locSeaTacAirport = {
   minCustHourly: 3,
@@ -17,8 +26,16 @@ var locSeaTacAirport = {
   avgCookiesPerCust: 1.2,
 }
 
-var randomNum = Math.floor((Math.random() * (locSeaTacAirport.maxCustHourly - locSeaTacAirport.minCustHourly +1)) + locSeaTacAirport.minCustHourly);
-  console.log('SeaTac Airport ' + randomNum);
+for (var i = 600; i <= 2000; i+=100) {
+  var randomNum = Math.floor((Math.random() * (locSeaTacAirport.maxCustHourly - locSeaTacAirport.minCustHourly +1)) + locSeaTacAirport.minCustHourly);{
+  randomNum++;
+  }
+  if (i < 1000) {
+    console.log('SeaTac Airport 0' + i + ': ' + randomNum);
+  } else {
+    console.log('SeaTac Airport ' + i + ': ' + randomNum);
+  }
+}
 
 var locSeattleCenter = {
   minCustHourly: 11,
@@ -26,8 +43,16 @@ var locSeattleCenter = {
   avgCookiesPerCust: 3.7,
 }
 
-var randomNum = Math.floor((Math.random() * (locSeattleCenter.maxCustHourly - locSeattleCenter.minCustHourly +1)) + locSeattleCenter.minCustHourly);
-  console.log('Seattle Center: ' + randomNum);
+for (var i = 600; i <= 2000; i+=100) {
+  var randomNum = Math.floor((Math.random() * (locSeattleCenter.maxCustHourly - locSeattleCenter.minCustHourly +1)) + locSeattleCenter.minCustHourly);{
+  randomNum++;
+  }
+  if (i < 1000) {
+    console.log('Seattle Center 0' + i + ': ' + randomNum);
+  } else {
+    console.log('Seattle Center ' + i + ': ' + randomNum);
+  }
+}
 
 var locCapitalHill = {
   minCustHourly: 20,
@@ -35,8 +60,16 @@ var locCapitalHill = {
   avgCookiesPerCust: 2.3,
 }
 
-var randomNum = Math.floor((Math.random() * (locCapitalHill.maxCustHourly - locCapitalHill.minCustHourly +1)) + locCapitalHill.minCustHourly);
-  console.log('Capital Hill: ' + randomNum);
+for (var i = 600; i <= 2000; i+=100) {
+  var randomNum = Math.floor((Math.random() * (locCapitalHill.maxCustHourly - locCapitalHill.minCustHourly +1)) + locCapitalHill.minCustHourly);{
+  randomNum++;
+  }
+  if (i < 1000) {
+    console.log('Capital Hill 0' + i + ': ' + randomNum);
+  } else {
+    console.log('Capital Hill ' + i + ': ' + randomNum);
+  }
+}
 
 var locAlki = {
   minCustHourly: 2,
@@ -44,5 +77,13 @@ var locAlki = {
   avgCookiesPerCust: 4.6,
 }
 
-var randomNum = Math.floor((Math.random() * (locAlki.maxCustHourly - locAlki.minCustHourly +1)) + locAlki.minCustHourly);
-  console.log('Alki: ' + randomNum);
+for (var i = 600; i <= 2000; i+=100) {
+  var randomNum = Math.floor((Math.random() * (locAlki.maxCustHourly - locAlki.minCustHourly +1)) + locAlki.minCustHourly);{
+  randomNum++;
+  }
+  if (i < 1000) {
+    console.log('Alki 0' + i + ': ' + randomNum);
+  } else {
+    console.log('Alki ' + i + ': ' + randomNum);
+  }
+}
