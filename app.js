@@ -6,11 +6,13 @@ var loc1stAndPike = {
   minCustHourly: 23,
   maxCustHourly: 65,
   avgCookiesPerCust: 6.3,
+  simulatedCookiesPerHour = [],
 }
 
 for (var i = 600; i <= 2000; i+=100) {
   var randomNum = Math.floor((Math.random() * (loc1stAndPike.maxCustHourly - loc1stAndPike.minCustHourly +1)) + loc1stAndPike.minCustHourly);{
-  randomNum++;
+    randomNum++;
+    simulatedCookiesPerHour.push(randomNum);
   }
   if (i < 1000) {
     console.log('1st and Pike 0' + i + ': ' + randomNum);
@@ -37,6 +39,7 @@ for (var i = 600; i <= 2000; i+=100) {
   }
 }
 
+
 var locSeattleCenter = {
   minCustHourly: 11,
   maxCustHourly: 38,
@@ -54,6 +57,7 @@ for (var i = 600; i <= 2000; i+=100) {
   }
 }
 
+
 var locCapitalHill = {
   minCustHourly: 20,
   maxCustHourly: 38,
@@ -70,6 +74,7 @@ for (var i = 600; i <= 2000; i+=100) {
     console.log('Capital Hill ' + i + ': ' + randomNum);
   }
 }
+
 
 var locAlki = {
   minCustHourly: 2,
