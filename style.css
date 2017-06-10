@@ -1,0 +1,21 @@
+html {
+  background-image: url("seattle_background_by_nemisis714.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {}
+
+h1 {
+  background-color: inherit;
+  width: 50%;
+}
+
+#nav {
+  display: block;
+  width: 100%;
+  background-color: inherit;
+  float: right;
+  text-align: right;
+  font-family: sans-serif;
+}
