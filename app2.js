@@ -72,3 +72,24 @@ for (var i = 0; i < allTheStores.length; i++) {
   genHourlySales(allTheStores[i]);
   makeRow(allTheStores[i]);
 }
+
+//starting the event listener for form element
+var formEl = document.getElementById('form');
+
+formEl.addEventListener('submit', fancyStoreSubmit);
+
+function fancyStoreSubmit(event) {
+  //preventDefault prevents page from loading and refreshing
+  event.preventDefault();
+  console.log(event.target.newName.value);
+
+  var newName = event.target.newName.value;
+  var newMinCust = event.target.newMinCust.value;
+  var newMaxCust = event.target.newMaxCust.value;
+  var newAvgCookiesSale = event.target.newAvgCookiesSale.value;
+
+  var newStore = new Store(newName, newMinCust, newMaxCust, newAvgCookiesSale);
+  
+  genHourlySales(newStore);
+  makeRow(newStore);
+}
